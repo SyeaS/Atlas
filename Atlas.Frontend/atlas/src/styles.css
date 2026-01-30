@@ -1,7 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @layer theme, base, components, utilities;
-@import 'tailwindcss/theme.css' layer(theme);
-@import 'tailwindcss/preflight.css' layer(base);
-@import 'tailwindcss/utilities.css';
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/preflight.css" layer(base);
+@import "tailwindcss/utilities.css";
 
 @import "@angular/cdk/overlay-prebuilt.css";
 @import "@spartan-ng/brain/hlm-tailwind-preset.css";
@@ -39,7 +43,7 @@ color-scheme: light;
 --sidebar-accent: 220, 8%, 96%;
 --sidebar-accent-foreground: 220, 10%, 22%;
 --sidebar-border: 220, 5%, 88%;
---sidebar-ring: 220, 8%, 70%);
+--sidebar-ring: 220, 8%, 70%;
 }
 
 :root.dark {
@@ -68,7 +72,7 @@ color-scheme: dark;
 --sidebar-accent: 220, 10%, 26%;
 --sidebar-accent-foreground: 220, 10%, 98%;
 --sidebar-border: 0, 0%, 10%;
---sidebar-ring: 220, 8%, 65%);
+--sidebar-ring: 220, 8%, 65%;
 }
 
 @layer base {
